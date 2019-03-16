@@ -13,27 +13,22 @@ public class Program {
 
     public static void main(String[] args) {
         System.out.println("Iniciando calculadora...");
-        Object[] operacoes = {"Soma","Subtração","Multiplicação","Divisão"};
-        double num1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número."));
-        double num2 = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número."));
-        int operacaoEscolhida = JOptionPane.showOptionDialog(null, "Escolha a operação a ser realizada.", "Escolhendo operação...", 0, 2, null, operacoes, operacoes[0]);
-        switch(operacaoEscolhida){
-            case 0: // SOMA
-                
-                break;// FIM - SOMA
-                
-            case 1: // SUBTRAÇÃO
-                
-                break;// FIM - SUBTRAÇÃO
-                
-            case 2: // MULTIPLICAÇÃO
-                
-                break;// FIM - MULTIPLICAÇÃO
-                
-            case 3: // DIVISÃO
-                
-                break;// FIM - DIVISÃO
+        String equacao = JOptionPane.showInputDialog(null, "Insira sua equação", "Calculadora", 0);
+        String[] parts=equacao.split(" ");
+        double num1 = Integer.parseInt(parts[0]);
+        double num2 = Integer.parseInt(parts[2]);
+        if (equacao.contains("+")) {
+            //Lógica para a soma
+            
+        }else if(equacao.contains("-")){
+            //Lógica para a subtração
+            
+        }else if(equacao.contains("*")){
+            //Lógica para a multiplicação
+            
+        }else if(equacao.contains("/")){
+            //Lógica para a divisão
+            
         }
     }
-    
 }
