@@ -3,7 +3,6 @@ package calculadoraims;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @authors:
  * Eduardo Correia
  * Felipe Bastos
@@ -17,7 +16,7 @@ public class Program {
         Object[] operacoes = {"Soma","Subtração","Multiplicação","Divisão"};
         double num1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número."));
         double num2 = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número."));
-        int operacaoEscolhida = JOptionPane.showOptionDialog(null, "EScolha a operação a ser realizada.", "Escolhendo operação...", 0, 2, null, operacoes, operacoes[0]);
+        int operacaoEscolhida = JOptionPane.showOptionDialog(null, "Escolha a operação a ser realizada.", "Escolhendo operação...", 0, 2, null, operacoes, operacoes[0]);
         switch(operacaoEscolhida){
             case 0: // SOMA
                 
