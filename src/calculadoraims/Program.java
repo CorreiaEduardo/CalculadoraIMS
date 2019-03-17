@@ -14,9 +14,22 @@ public class Program {
     public static void main(String[] args) {
         System.out.println("Iniciando calculadora...");
         String equacao = JOptionPane.showInputDialog(null, "Insira sua equação", "Calculadora", 0);
-        String[] parts=equacao.split(" ");
-        double num1 = Integer.parseInt(parts[0]);
-        double num2 = Integer.parseInt(parts[2]);
+        double num1;
+        double num2;
+        if (!equacao.contains("v")) {
+            String[] parts=equacao.split(" ");
+            num1 = Integer.parseInt(parts[0]);
+            num2 = Integer.parseInt(parts[2]);
+        }else{
+            try{
+                String[] parts=equacao.split("v ");
+                num1 = Integer.parseInt(parts[1]);
+            }
+            catch(Exception ex){
+                String[] parts=equacao.split("v");
+                num1 = Integer.parseInt(parts[1]);
+            }
+        }
         if (equacao.contains("+")) {
             //Lógica para a soma
             
@@ -29,6 +42,9 @@ public class Program {
         }else if(equacao.contains("/")){
             //Lógica para a divisão
             
+        }else if(equacao.contains("v")){
+            JOptionPane.showMessageDialog(null, "O resultado da raiz quadrada é "+new Operacao().squareroot(num1));
         }
+        
     }
 }
