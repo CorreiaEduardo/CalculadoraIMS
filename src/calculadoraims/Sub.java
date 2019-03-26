@@ -9,9 +9,6 @@ package calculadoraims;
  *
  * @author aluno
  */
-public class Somar {
-    public double somar(double x, double y){
-        return x+y;
-    }
+public class Sub {
     
 }
