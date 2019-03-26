@@ -18,8 +18,8 @@ public class Program {
         double num1 = Integer.parseInt(parts[0]);
         double num2 = Integer.parseInt(parts[2]);
         if (equacao.contains("+")) {
-            //Lógica para a soma
-            
+            Somar soma = new Somar();
+            JOptionPane.showMessageDialog(null, "Resultado:\n"+soma.somar(num1, num2)); 
         }else if(equacao.contains("-")){
             //Lógica para a subtração
             
@@ -29,6 +29,9 @@ public class Program {
         }else if(equacao.contains("/")){
             //Lógica para a divisão
             
+        }else if(equacao.contains("^")){
+            Expo expo = new Expo();
+            JOptionPane.showMessageDialog(null, "Resultado:\n"+expo.expo(num1, num2));
         }
     }
 }
