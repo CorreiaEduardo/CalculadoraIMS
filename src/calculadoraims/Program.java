@@ -43,7 +43,7 @@ public class Program {
             //Lógica para a divisão
             
         }else if(equacao.contains("v")){
-            JOptionPane.showMessageDialog(null, "O resultado da raiz quadrada é "+new Operacao().squareroot(num1));
+            JOptionPane.showMessageDialog(null, "O resultado da raiz quadrada é "+new Squareroot().squareroot(num1));
         }
         
     }

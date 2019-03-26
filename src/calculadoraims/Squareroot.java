@@ -7,7 +7,7 @@ package calculadoraims;
  * Felipe Neiva
  * Luiz Miguel Santana
  */
-public class Operacao {
+public class Squareroot {
     public double squareroot(double x){
         return Math.sqrt(x);
     }
