@@ -27,7 +27,7 @@ public class Program {
             //Lógica para a multiplicação
             
         }else if(equacao.contains("/")){
-            JOptionPane.showMessageDialog(null, "O resultado da divisão é "+new Operacao().dividir(num1, num2));
+            JOptionPane.showMessageDialog(null, "O resultado da divisão é "+new Divisao().dividir(num1, num2));
         }
     }
 }

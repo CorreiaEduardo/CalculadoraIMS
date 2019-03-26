@@ -7,7 +7,7 @@ package calculadoraims;
  * Felipe Neiva
  * Luiz Miguel Santana
  */
-public class Operacao {
+public class Divisao {
     public double dividir(double x, double y){
         return x/y;
     }
