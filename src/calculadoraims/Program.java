@@ -17,6 +17,7 @@ public class Program {
         String[] parts=equacao.split(" ");
         double num1 = Integer.parseInt(parts[0]);
         double num2 = Integer.parseInt(parts[2]);
+        Multiplicacao multiplicacao = new Multiplicacao();
         if (equacao.contains("+")) {
             //Lógica para a soma
             
@@ -25,6 +26,7 @@ public class Program {
             
         }else if(equacao.contains("*")){
             //Lógica para a multiplicação
+            System.out.println(multiplicacao.multiplicar(num1, num2));
             
         }else if(equacao.contains("/")){
             //Lógica para a divisão
